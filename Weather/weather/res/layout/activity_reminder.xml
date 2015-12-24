@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleActivity" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:background="@drawable/bg_addcity" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/maintab_toolbar_bg1" >
+
+                <TextView
+                    android:id="@+id/reminder_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp" 
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" 
+                       	android:padding="7dp"
+                       	
+                        android:background="@drawable/bbg">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:paddingRight="10dp"
+                             >
+
+                            <TextView
+                                android:id="@+id/TextView02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="穿衣指数："
+                                android:textSize="15dp"
+                                android:textColor="#fff"/>
+
+                            <TextView
+                                android:id="@+id/clothing_index"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="12dp"
+                                android:textColor="#fff"
+                                 />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/clothing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            
+                            android:text="" 
+                            android:textColor="#fff"/>
+                    </LinearLayout>
+                    <TextView
+                            android:id="@+id/TextView03"
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            />
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" 
+                        android:background="@drawable/bbg"
+                        android:padding="7dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                             >
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="空气指数："
+                                android:textSize="15dp"
+                                android:textColor="#fff"/>
+
+                            <TextView
+                                android:id="@+id/goout_index"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="12dp"
+                                android:textColor="#fff"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/goout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                   
+                            android:text="" 
+                            android:textColor="#fff"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="20dp" 
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bbg" 
+                        android:padding="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" >
+
+                            <TextView
+                                android:id="@+id/TextView07"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="感冒指数："
+                                android:textSize="15dp"
+                                android:textColor="#fff"/>
+
+                            <TextView
+                                android:id="@+id/cold_index"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12dp"
+                                android:text=""
+                                android:textColor="#fff"
+                                 />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/cold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            
+                            android:text="" 
+                            android:textColor="#fff"/>
+                    </LinearLayout>
+                    
+                    <TextView
+                            android:id="@+id/TextView03"
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:textColor="#fff"
+                            />
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" 
+                        android:background="@drawable/bbg"
+                        android:padding="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" >
+
+                            <TextView
+                                android:id="@+id/TextView05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="运动指数："
+                                android:textSize="15dp"
+                                android:textColor="#fff"/>
+
+                            <TextView
+                                android:id="@+id/exercise_index"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="#fff"
+                                android:textSize="12dp"
+                                 />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/exercise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" 
+                            android:textColor="#fff"/>
+                    </LinearLayout>
+                </LinearLayout>
+                
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

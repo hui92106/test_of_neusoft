@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "timeinterval">
+        <item >五分钟</item>
+        <item >十五分钟</item>
+        <item >半个小时</item>
+        <item >一个小时</item>        
+    </string-array>
+    
+</resources>

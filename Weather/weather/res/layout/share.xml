@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/share"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#fff"
+        android:text="TextViewads发生的发生地方举案说法撒的房间啊sdk放假卡上的房价阿萨德就发了伺机待发拉升房价的拉斯的纠纷拉斯的房价拉斯的房价；adsl放假ads会计法律" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.73"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_cho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人" />
+
+    </LinearLayout>
+
+</LinearLayout>

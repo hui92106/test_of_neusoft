@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleinfoActivity" >
+>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/maintab_toolbar_bg1" >
+
+            <Button
+                android:id="@+id/btn_back2"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/back" />
+
+            <Button
+                android:id="@+id/but_edt"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bj" />
+
+            <Button
+                android:id="@+id/but_del"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/but_edt"
+                android:background="@drawable/del" />
+
+            <TextView
+                android:id="@+id/tv_citymanager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_back2"
+                android:text="今日日程"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_addcity" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:orientation="vertical"
+                android:paddingLeft="50dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp" >
+
+                    <TextView
+                          android:id="@+id/textView1"
+                              android:layout_width="130dp"
+                              android:layout_height="wrap_content"
+                            
+                              android:text="主题："
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#fff"  />
+
+                    <TextView
+                        android:id="@+id/tv_gettheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#fff"
+                        android:text="主题"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_area"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="地点："
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tv_getarea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#fff"
+                        android:text="地点" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_remindtime"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="提醒时间："
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tv_gettime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#fff"
+                        android:text="提醒" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="是否重复："
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tv_getisrepeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#fff"
+                        android:text="重复" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_timeinteval"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="重复时间："
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tv_gettimeinterval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#fff"
+                        android:text="重复时间" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_more"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="备注："
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tv_getmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#fff"
+                        android:text="备注" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_weather"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_1"
+                android:tag="radio_button0"
+                android:paddingTop="4dp"
+                            android:background="@drawable/maintab_toolbar_bg"
+                android:text="天气" />
+
+            <RadioButton
+                android:id="@+id/radio_calendar"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_2"
+                android:tag="radio_button1"
+                android:paddingTop="4dp"
+                            android:background="@drawable/maintab_toolbar_bg"
+                android:text="日历" />
+
+            <RadioButton
+                android:id="@+id/radio_reminderlife"
+               style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_3"
+                android:tag="radio_button2"
+                android:paddingTop="4dp"
+                            android:background="@drawable/maintab_toolbar_bg"
+                android:text="生活提醒" />
+
+            <RadioButton
+                android:id="@+id/radio_more"              
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_4"
+                android:tag="radio_button3"
+                android:paddingTop="4dp"
+                            android:background="@drawable/maintab_toolbar_bg"
+                android:text="更多" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

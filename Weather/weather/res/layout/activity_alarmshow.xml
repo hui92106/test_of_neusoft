@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmshowActivity" 
+     android:background="@drawable/bg_addcity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/maintab_toolbar_bg1" 
+        >
+
+        <TextView
+            android:id="@+id/tv_citymanager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_centerVertical="true"
+            android:text="日程提醒"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" 
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

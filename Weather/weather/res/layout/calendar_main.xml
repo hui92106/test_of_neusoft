@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#EDE8DD" >
+
+        <Button
+            android:id="@+id/btn_pre_month"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/previous_month" />
+
+        <TextView
+            android:id="@+id/Top_Date"
+            android:layout_width="150dip"
+            android:layout_height="40dp"
+            android:textColor="#424139"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_next_month"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/next_month" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

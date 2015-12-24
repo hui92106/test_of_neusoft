@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.weather"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="weather"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.example.weather.MainActivity"
+            android:label="weather" >
+        </activity>
+        <activity android:name="com.example.weather.weather" >
+        </activity>
+        <activity android:name="com.example.weather.Main2" >
+        </activity>
+        <activity android:name="com.example.weather.lifereminder" >
+        </activity>
+        <activity
+            android:name="com.example.weather.IndexActivity"
+            android:label="weather"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.weather.Addcity"
+            android:label="@string/title_activity_addcity" >
+        </activity>
+        <activity
+            android:name="com.example.weather.Addcityinfo"
+            android:label="@string/title_activity_addcityinfo" >
+        </activity>
+        <activity android:name="com.calendar.demo.CalendarActivity" >
+        </activity>
+        <activity android:name="com.example.weat.ScheduleActivity" >
+        </activity>
+        <activity android:name="com.example.weat.ScheduleinfoActivity" >
+        </activity>
+        <activity android:name="com.example.weat.ScheduleAddActivity" >
+        </activity>
+        <activity android:name="com.example.weat.EditScheduleActivity" >
+        </activity>
+        <activity android:name="com.example.weat.RemindActivity" >
+        </activity>
+        <activity android:name="com.example.weat.AlarmshowActivity" >
+        </activity>
+        <activity android:name="com.example.weather.ReminderActivity" >
+        </activity>
+        <activity
+            android:name="com.example.weather.MoerActivity"
+            android:label="@string/title_activity_moer" >
+        </activity>
+    </application>
+
+</manifest>
